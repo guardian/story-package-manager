@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>Story package manager</title>
+
+      <link rel="shortcut icon" type="image/png" href="/assets/images/favicon.png">
+      <% var styles = ['style.css']; %>
+
+      <% styles.forEach(function (style) { %>
+          <link rel='stylesheet' type='text/css' href='/assets/stylesheets/compiled/<%= style %>' />
+      <% }); %>
+
+      <script src="/assets/jspm_packages/system.js"></script>
+      <script src="/assets/config.js"></script>
+      <script>
+          window._initialState = <%- initialState %>
+          window._additionalConf = <%- additionalConf %>
+          System.import('js/reactMount');
+      </script>
+  </head>
+  <body>
+    <div id="react-mount"><%- reactOutput %></div>
+  </body>
+</html>
