@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "nodemon -e js,jsx ./bin/www"
   },
   "dependencies": {
     "babel": "^5.8.23",
@@ -14,8 +14,18 @@
     "ejs": "~2.2.3",
     "express": "~4.11.1",
     "jspm": "^0.16.13",
+    "lodash": "^3.10.1",
     "morgan": "~1.5.1",
+    "react-redux": "^2.1.2",
+    "react-router": "^1.0.0-rc3",
+    "redux-logger": "^1.0.9",
+    "redux-thunk": "^0.1.0",
     "serve-favicon": "~2.2.0"
+  },
+  "devDependencies": {
+    "babel-core": "^5.8.22",
+    "core-util-is": "^1.0.1",
+    "nodemon": "1.4.0"
   },
   "jspm": {
     "directories": {
@@ -26,16 +36,16 @@
       "lodash": "npm:lodash@^3.10.1",
       "react": "npm:react@^0.14.0",
       "react-dom": "npm:react-dom@^0.14.0",
-      "react-redux": "npm:react-redux@^4.0.0",
-      "react-router": "npm:react-router@^1.0.0-rc3",
+      "react-redux": "npm:react-redux@^2.1.2",
+      "react-router": "npm:react-router@1.0.0-rc3",
       "redux": "npm:redux@^3.0.3",
-      "redux-logger": "npm:redux-logger@^2.0.4",
-      "redux-thunk": "npm:redux-thunk@^1.0.0"
+      "redux-logger": "npm:redux-logger@^1.0.6",
+      "redux-thunk": "npm:redux-thunk@^0.1.0"
     },
     "devDependencies": {
-      "babel": "npm:babel-core@^5.1.13",
-      "babel-runtime": "npm:babel-runtime@^5.1.13",
-      "core-js": "npm:core-js@^0.9.4"
+      "babel": "npm:babel-core@^5.8.24",
+      "babel-runtime": "npm:babel-runtime@^5.8.24",
+      "core-js": "npm:core-js@^1.1.4"
     }
   }
 }
