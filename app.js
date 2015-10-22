@@ -38,7 +38,7 @@ if (env !== 'production') { // compile scss on the fly
 
 app.use('/assets', express.static(path.join(__dirname, '/public')));
 
-app.get('/', application.isomorphic);
+app.get(/\/((?!(assets|favicon)).)*/, application.isomorphic);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
