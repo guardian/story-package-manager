@@ -11,6 +11,7 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
 const application = require('./controllers/application');
+const env = process.env.NODE_ENV || 'development';
 
 var app = express();
 
@@ -24,6 +25,16 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
+
+if (env !== 'production') { // compile scss on the fly
+    app.use('/assets/stylesheets/compiled',
+        require('node-sass-middleware')({
+            src: path.join(__dirname, '/public/stylesheets/'), //where the sass files are
+            dest: path.join(__dirname, '/public/stylesheets/compiled'), //where css should go
+            debug: true
+        })
+    );
+}
 
 app.use('/assets', express.static(path.join(__dirname, '/public')));
 
