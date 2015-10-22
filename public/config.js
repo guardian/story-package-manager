@@ -19,6 +19,7 @@ System.config({
     "core-js": "npm:core-js@1.2.2",
     "history": "npm:history@1.12.5",
     "lodash": "npm:lodash@3.10.1",
+    "moment": "github:moment/moment@2.10.6",
     "react": "npm:react@0.14.0",
     "react-dom": "npm:react-dom@0.14.0",
     "react-redux": "npm:react-redux@2.1.2",

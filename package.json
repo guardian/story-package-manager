@@ -15,6 +15,7 @@
     "express": "~4.11.1",
     "jspm": "^0.16.13",
     "lodash": "^3.10.1",
+    "moment": "^2.10.6",
     "morgan": "~1.5.1",
     "node-sass-middleware": "^0.9.7",
     "react-redux": "^2.1.2",
@@ -35,6 +36,7 @@
     "dependencies": {
       "history": "npm:history@^1.12.5",
       "lodash": "npm:lodash@^3.10.1",
+      "moment": "github:moment/moment@^2.10.6",
       "react": "npm:react@^0.14.0",
       "react-dom": "npm:react-dom@^0.14.0",
       "react-redux": "npm:react-redux@^2.1.2",

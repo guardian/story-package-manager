@@ -1,7 +1,14 @@
+@import "shared/reset";
+@import "shared/webfonts";
+@import "shared/typography";
+@import "shared/colours";
+
+@import 'components/header';
+
 body {
     background: fuchsia;
     padding: 50px;
-    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    //font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
