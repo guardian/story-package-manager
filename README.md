@@ -1,2 +1,14 @@
-# story-package-manager
-Application for creating and managing Guardian story packages
+# Story Package Manager
+
+An application for curating Story Packages
+
+## Running locally
+
+```
+npm install
+jspm install
+
+npm run start
+
+Goto: http://localhost:3000
+```
