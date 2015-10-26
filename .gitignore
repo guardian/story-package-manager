@@ -31,5 +31,4 @@ npm-debug.log
 
 public/jspm_packages
 
-/public/stylesheets/*
-/public/javascripts/*
+/public/stylesheets/compiled/*
