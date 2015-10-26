@@ -36,10 +36,10 @@ export default class Header extends React.Component {
 
                     <Link to="/" className="top-toolbar__title">
                         <div className="top-toolbar__letter">
-                            <span className="top-toolbar__letter-text">Q</span>
+                            <span className="top-toolbar__letter-text">S</span>
                         </div>
                         <h1 className="top-toolbar__page-title">
-                            <span className="top-toolbar__page-title-text">Ten Four</span>
+                            <span className="top-toolbar__page-title-text">Story package manager</span>
                         </h1>
                         {this.renderTitleHoverState()}
                     </Link>

@@ -13,7 +13,7 @@ $size-header-height: 50px;
     max-height: $size-header-height;
     background-color: $c-alt-green;
     z-index: 2;
-    line-height: 50px;
+    line-height: $size-header-height;
 }
 
 .header__children {
@@ -26,7 +26,7 @@ $size-header-height: 50px;
     padding: 0 15px;
     @extend %f-data;
     @extend %fs-data-3;
-    line-height: 50px;
+    line-height: $size-header-height;
     cursor: pointer;
     text-decoration: none;
     color: $c-grey-700;
@@ -61,17 +61,16 @@ $size-header-height: 50px;
 
 .top-toolbar__title {
 
-    flex: 0 0 160px;
-
     position: relative;
 
     font-size: 18px;
-    line-height: 50px;
+    
+    line-height: $size-header-height;
+    max-height: $size-header-height;
+
     background-color: $c-grey-350;
     margin: 0;
     border-right: 1px solid $c-grey-300;
-    display: flex;
-
     text-decoration: none;
     color: black;
 
@@ -79,7 +78,7 @@ $size-header-height: 50px;
         border-right: 1px solid $c-grey-300;
         padding: 0 10px;
         font-size: 20px;
-        flex: 0 0 50px;
+        flex: 0 0 $size-header-height;
         @extend %f-title;
     }
 
@@ -134,7 +133,7 @@ $size-header-height: 50px;
 .top-toolbar__letter, .top-toolbar__page-title {
     display: inline-block;
     text-align: center;
-    line-height: 55px;
+    line-height: $size-header-height;
 }
 
 .links {
@@ -144,8 +143,8 @@ $size-header-height: 50px;
         vertical-align: middle;
         display: inline-block;
         vertical-align: top;
-        height: 50px;
-        line-height: 50px;
+        height: $size-header-height;
+        line-height: $size-header-height;
         @extend %fs-data-4;
         padding: 0 15px;
 
@@ -171,6 +170,10 @@ $size-header-height: 50px;
 
 .header__component {
     display: inline-block;
-    height: 50px;
-    line-height: 50px;
+    height: $size-header-height;
+    line-height: $size-header-height;
+}
+
+.top-toolbar__page-title-text {
+    padding: 0 0.5rem;
 }

@@ -6,8 +6,9 @@
 @import 'components/header';
 
 body {
-    background: fuchsia;
-    padding: 50px;
+    background: $c-grey-100;
+    margin-top: $size-header-height;
+    padding: 1rem;
     //font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 

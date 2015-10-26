@@ -185,14 +185,13 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #008fc5; }
 
 .top-toolbar__title {
-  flex: 0 0 160px;
   position: relative;
   font-size: 18px;
   line-height: 50px;
+  max-height: 50px;
   background-color: #bec5c6;
   margin: 0;
   border-right: 1px solid #dcdcdc;
-  display: flex;
   text-decoration: none;
   color: black; }
   .top-toolbar__title .top-toolbar__letter {
@@ -224,7 +223,7 @@ h1, h2, h3, h4, h5, h6 {
 .top-toolbar__letter, .top-toolbar__page-title {
   display: inline-block;
   text-align: center;
-  line-height: 55px; }
+  line-height: 50px; }
 
 .links {
   display: block;
@@ -254,9 +253,13 @@ h1, h2, h3, h4, h5, h6 {
   height: 50px;
   line-height: 50px; }
 
+.top-toolbar__page-title-text {
+  padding: 0 0.5rem; }
+
 body {
-  background: fuchsia;
-  padding: 50px; }
+  background: #f6f6f6;
+  margin-top: 50px;
+  padding: 1rem; }
 
 a {
   color: #00B7FF; }

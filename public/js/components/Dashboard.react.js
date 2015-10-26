@@ -11,20 +11,18 @@ export default class Dashboard extends React.Component {
         super(props);
     }
 
-    /* <CreateQuizButton createState={this.props.state.createState} dispatch={this.props.dispatch}/> */
-
     render () {
         return (
             <div className="wrapper">
                 <Header user={this.props.user} suppressTitleLink={true}>
                     <ul className="links">
-                        <li className="links__item top-toolbar__item--highlight"><i className="i-enter-quiz-text" />
-                            <Link to="/parse">Enter quiz text</Link>
+                        <li className="links__item top-toolbar__item--highlight">
+                            <Link to="/new">New package</Link>
                         </li>
 
                     </ul>
                 </Header>
-                <h1>React Dashboard</h1>
+                <h1>Latest packages</h1>
             </div>
         );
     }
