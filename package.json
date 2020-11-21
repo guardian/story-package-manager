@@ -19,7 +19,7 @@
     "moment": "^2.10.6",
     "morgan": "~1.5.1",
     "node-sass-middleware": "^0.9.7",
-    "react": "~0.13",
+    "react": "~0.14.10",
     "react-redux": "^2.1.2",
     "react-router": "^1.0.0-rc3",
     "redux-logger": "^1.0.9",
