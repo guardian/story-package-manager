@@ -17,7 +17,7 @@
     "jspm": "^0.16.13",
     "lodash": "^3.10.1",
     "moment": "^2.10.6",
-    "morgan": "~1.5.1",
+    "morgan": "~1.10.0",
     "node-sass-middleware": "^0.9.7",
     "react": "~0.13",
     "react-redux": "^2.1.2",
